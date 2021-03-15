@@ -31,6 +31,7 @@ header nav ul li a {
     color: rgba(128, 128, 128, 0.712);
     text-decoration: none;
     transition: .5s;
+    font-size: 17px;
 }
 
 header nav ul li a:hover {
@@ -132,11 +133,67 @@ main div {
     font-weight: lighter;
 }
 
+/* description */
+.description {
+    margin-top: 150px;
+    /* background-color: red; */
+}
+
+.description img {
+    width: 100%;
+}
+
+.description .description-content {
+    color: white;
+}
+
+.description .description-content h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.description .description-content p {
+    margin-left: 20px;
+}
+
+.description .description-content a {
+    margin-left: 20px;
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding-bottom: 10px;
+}
+
 
 /* media */
+@media screen and (min-width: 420px) {
+    body {
+        /* background-color: yellow; */
+    }
+
+    header img {
+        width: 90px;
+        height: 25px;
+    }
+
+    header nav ul li a {
+        font-size: 13px;
+    }
+}
+
 @media screen and (min-width: 720px) {
     body {
         /* background-color: red; */
+    }
+
+    header img {
+        width: 150px;
+        height: 45px;
+    }
+
+    header nav ul li a {
+        font-size: 17px;
     }
 
     .main {
@@ -168,7 +225,43 @@ main div {
 
     .feature-card {
         margin: 30px 20px;
-        width: 500px;
+        width: 40%;
+    }
+
+    .description {
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .description img {
+        width: 400px;
+    }
+    
+    .description .description-content {
+        color: white;
+        width: 40%;
+    }
+    
+    .description .description-content h3 {
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    .description .description-content p {
+        margin-left: 20px;
+    }
+    
+    .description .description-content a {
+        margin-left: 20px;
+        color: hsl(176, 68%, 64%);
+        text-decoration: none;
+        border-bottom: 1px solid hsl(176, 68%, 64%);
+        padding-bottom: 10px;
     }
 
 }
@@ -185,5 +278,13 @@ main div {
 
     .main-container-content img{
         height: 400px;
+    }
+
+    .description img {
+        width: 500px;
+    }
+
+    .description .description-content {
+        margin-left: 80px;
     }
 }
