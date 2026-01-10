@@ -205,7 +205,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: clamp(2rem, 6vw, 6rem);
-    padding: clamp(3rem, 5vw, 4rem) clamp(1rem, 2vw, 2rem);
+    padding: clamp(2rem, 5vw, 4rem) clamp(2rem, 2vw, 2rem);
 }
 
 .info__imageContainer {
@@ -223,6 +223,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
     gap: 1.5rem;
 }
 
@@ -247,6 +248,7 @@ body {
     position: relative;
     padding-block-end: 1rem;
     border-bottom: 2px solid var(--accent-teal-200);
+    margin: 0 auto;
 }
 
 .info__linksContainer:is(:hover, :focus-within) {
@@ -309,19 +311,14 @@ body {
     
     /* Info */
     .info {
-        text-align: center;
         flex-direction: row;
         justify-content: center;
-    }
-    
-    .info__linksContainer {
-        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 1340px) {
     /* Info */
-    .info {
+    .info__text {
         text-align: left;
     }
     
