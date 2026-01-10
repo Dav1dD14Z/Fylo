@@ -168,7 +168,8 @@ body {
 }
 
 .card {
-    max-width: 22rem;
+    width: 90%;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,9 +193,89 @@ body {
     color: var(--white);
     font-size: clamp(1rem, 4vw, 1.2rem);
     font-family: var(--body-typography);
+    line-height: 1.6;
+}
+
+/* Info Section */
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 6vw, 6rem);
+    padding: clamp(3rem, 5vw, 4rem) clamp(1rem, 2vw, 2rem);
+}
+
+.info__imageContainer {
+    width: 100%;
+    max-width: 45rem;
+}
+
+.info__image {
+    width: 100%;
+}
+
+.info__text {
+    width: 100%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.info__title {
+    font-family: var(--headings-typography);
+    font-size: clamp(1.4rem, 6vw, 3rem);
+    color: var(--white);
+}
+
+.info__paragraph {
+    line-height: 1.6;
+    color: var(--white);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-family: var(--body-typography);
+}
+
+.info__linksContainer {
+    width: 57%;
+    max-width: 13rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-block-end: 1rem;
+    border-bottom: 2px solid var(--accent-teal-200);
+}
+
+.info__linksContainer:is(:hover, :focus-within) {
+    cursor: pointer;
+}
+
+.info__link {
+    text-decoration: none;
+    color: var(--accent-teal-200);
+    font-family: var(--body-typography);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+.info__link:is(:focus) {
+    outline: 1px solid var(--accent-teal-200);
+}
+
+.info__arrow {
+    position: absolute;
+    right: 0;
 }
 
 /* Media Queries */
+@media screen and (max-width: 300px) {
+    .info__linksContainer img {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 420px) {
     /* Header */
     .header {
@@ -211,11 +292,13 @@ body {
         justify-content: space-between;
     }
 
+    /* Services */
     .services {
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -223,12 +306,26 @@ body {
     .header {
         justify-content: space-around;
     }
+    
+    /* Info */
+    .info {
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .info__linksContainer {
+        margin: 0 auto;
+    }
 }
 
-@media screen and (min-width: 1220px) {
-    /* Card */
-    .card {
-        margin: 0 6rem;
-        max-width: 25rem;
+@media screen and (min-width: 1340px) {
+    /* Info */
+    .info {
+        text-align: left;
+    }
+    
+    .info__linksContainer {
+        margin: 0;
     }
 }
