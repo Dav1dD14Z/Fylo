@@ -169,7 +169,7 @@ body {
 
 .card {
     width: 90%;
-    max-width: 30rem;
+    max-width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,7 +308,7 @@ body {
     .header {
         justify-content: space-around;
     }
-    
+
     /* Info */
     .info {
         flex-direction: row;
@@ -317,6 +317,11 @@ body {
 }
 
 @media screen and (min-width: 1340px) {
+    /* Card */
+    .card {
+        max-width: 30rem;
+    }
+
     /* Info */
     .info__text {
         text-align: left;
