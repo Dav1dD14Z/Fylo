@@ -282,11 +282,20 @@ body {
 .review__cardContainer {
     width: 100%;
     max-width: 100rem;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2.5rem;
+}
+
+.review__cardContainer::before {
+    content: url('../images/bg-quotes.png');
+    position: absolute;
+    left: 1rem;
+    top: -2.5rem;
+    z-index: -1;
 }
 
 .review__card {
@@ -383,16 +392,16 @@ body {
         flex-direction: row;
         justify-content: center;
     }
+}
 
+@media screen and (min-width: 1024px) {
     /* Review Section */
     .review__card {
         max-width: 30rem;
     }
-
 }
 
 @media screen and (min-width: 1340px) {
-    
     /* Info */
     .info__text {
         text-align: left;
