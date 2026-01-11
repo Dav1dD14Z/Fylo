@@ -340,11 +340,13 @@ body {
 }
 
 .review__author {
+    font-family: var(--body-typography);
     font-size: clamp(1rem, 4vw, 1.2rem);
 }
 
 .review__position {
     font-size: clamp(0.8rem, 2vw, 1rem);
+    font-family: var(--body-typography);
     color: var(--gray);
 }
 
