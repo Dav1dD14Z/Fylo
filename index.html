@@ -139,18 +139,22 @@
             </form>
         </section>
         <figure class="footer__imageContainer">
-            <img src="./images/logo.svg" alt="Fylo logo" loading="lazy" decoding="async">
+            <img class="footer__img" src="./images/logo.svg" alt="Fylo main logo" loading="lazy" decoding="async">
         </figure>
         <div class="footer__container">
             <article class="footer__textContainer">
-                <img class="footer__location" src="./images/icon-location.svg" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <img class="footer__iconImage" src="./images/icon-location.svg" alt="location icon" loading="lazy" decoding="async" ara-hidden="true">
+                <p class="footer__aside">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             </article>
             <nav class="footer__emailContainer" aria-label="Contact navigation">
-                <img src="" alt="" class="footer__tel">
-                <a href="#">+1-543-123-4567</a>
-                <img src="" alt="" class="footer__email">
-                <a href="#">example@fylo.com</a>
+                <div>
+                    <img src="./images/icon-phone.svg" alt="Telephone icon" class="footer__tel" loading="lazy" decoding="async" aria-hidden="true">
+                    <a class="footer__aside footer__aside--link" href="tel:+1-543-123-4567">+1-543-123-4567</a>
+                </div>
+                <div>
+                    <img src="./images/icon-email.svg" alt="Email icon" class="footer__email" loading="lazy" decoding="async" aria-hidden="true">
+                    <a class="footer__aside footer__aside--link" href="mailto:example@fylo.com">example@fylo.com</a>
+                </div>
             </nav>
             <nav class="footer__infoContainer">
                 <ul>
@@ -166,7 +170,7 @@
                     <li><a href="#" class="footer__link">Terms</a></li>
                     <li><a href="#" class="footer__link">Privacy</a></li>
                 </ul>
-                </nav>
+            </nav>
             <nav class="footer__socialContainer">
             </nav>
         </div>
