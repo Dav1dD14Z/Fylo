@@ -350,6 +350,80 @@ body {
     color: var(--gray);
 }
 
+/* Form Section */
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50rem;
+    padding: clamp(3rem, 4vw, 7rem);
+    margin-block-start: 15rem;
+    background-color: red;
+}
+
+.form {
+    width: 85%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    position: absolute;
+    top: -30%;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--intro-bg);
+}
+
+.form__title {
+    font-family: var(--headings-typography);
+    font-size: clamp(1.2rem, 6vw, 2rem );
+}
+
+.form__description {
+    line-height: 1.6;
+    font-family: var(--body-typography);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.form__formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.form__input,
+.form__button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--body-typography);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.form__input {
+    padding: 0.7rem clamp(1rem, 2vw, 1.5rem);
+}
+
+.form__button {
+    cursor: pointer;
+    padding: 0.7rem;
+    color: var(--white);
+    background: linear-gradient(to right, var(--accent-teal-200), var(--accent-cyan-500));
+}
+
+.form__button:is(:hover, :focus) {
+    background: linear-gradient(to right, var(--accent-cyan-500), var(--accent-teal-200));
+}
 
 /* Media Queries */
 @media screen and (max-width: 300px) {
@@ -380,7 +454,11 @@ body {
         justify-content: center;
         align-items: center;
     }
-
+    
+    /* Form Section */
+    .form {
+        top: -20%;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -393,6 +471,19 @@ body {
     .info {
         flex-direction: row;
         justify-content: center;
+    }
+
+    /* Form Section */
+    .form {
+        top: -18%;
+    }
+
+    .form__input {
+        max-width: 25rem;
+    }
+
+    .form__button {
+        max-width: 15rem;
     }
 }
 
