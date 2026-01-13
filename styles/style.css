@@ -11,12 +11,13 @@
     --white: hsl(0, 0%, 100%);
     --gray: hsl(0, 0%, 70%);
 
-    --headings-typography: "Raleway", sans-serif;;
+    --headings-typography: "Raleway", sans-serif;
     --body-typography: "Open Sans", sans-serif;
 }
 
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 * {
