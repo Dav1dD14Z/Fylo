@@ -599,9 +599,11 @@ body {
     .footer__textContainer {
         max-width: clamp(8rem, 20vw, 30rem);
     }
+
     .footer__emailContainer {
         max-width: clamp(12rem, 16vw, 15rem);
     }
+    
     .footer__infoContainer {
         max-width: clamp(5rem, 8vw, 8rem);
         margin: 0;
